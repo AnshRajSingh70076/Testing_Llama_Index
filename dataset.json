@@ -1,0 +1,82 @@
+[
+  {
+    "input": "What does MCP stand for?",
+    "expected_output": "MCP stands for Model Context Protocol. It is a protocol that enables LLMs to communicate with external tools, services, and data sources through standardized interfaces."
+  },
+  {
+    "input": "What is the main purpose of MCP?",
+    "expected_output": "The main purpose of MCP is to connect LLMs with tools, APIs, databases, and services through a standardized protocol, similar to how USB connects devices."
+  },
+  {
+    "input": "Name the three important MCP components.",
+    "expected_output": "The three important MCP components are MCP Host, MCP Client, and MCP Server."
+  },
+  {
+    "input": "What is an MCP Host?",
+    "expected_output": "An MCP Host is the application that runs and manages MCP clients. Examples include Claude Desktop, Cursor IDE, Streamlit applications, FastAPI applications, and MCP Inspector."
+  },
+  {
+    "input": "What is the role of an MCP Client?",
+    "expected_output": "An MCP Client communicates with MCP Servers using the MCP protocol and acts as the bridge between the host application and available tools."
+  },
+  {
+    "input": "What resources can MCP Servers expose?",
+    "expected_output": "MCP Servers can expose tools, APIs, databases, code repositories, search systems, and other services."
+  },
+  {
+    "input": "How does communication happen between an LLM and MCP tools?",
+    "expected_output": "The MCP Host sends user requests and context to the LLM. The LLM determines which tool is needed, and the MCP Client calls the appropriate MCP Server to access that tool or resource."
+  },
+  {
+    "input": "Why is MCP often compared to USB?",
+    "expected_output": "MCP is compared to USB because it provides a standardized way for LLMs to connect with many different tools and services, similar to how USB standardizes device connectivity."
+  },
+  {
+    "input": "What is A2A?",
+    "expected_output": "A2A stands for Agent2Agent Protocol. It is an open protocol designed for communication and collaboration between agents."
+  },
+  {
+    "input": "Which company announced the A2A protocol?",
+    "expected_output": "Google announced the Agent2Agent (A2A) protocol."
+  },
+  {
+    "input": "How does A2A complement MCP?",
+    "expected_output": "MCP provides access to tools and context, while A2A enables communication and collaboration between agents."
+  },
+  {
+    "input": "Give an example use case of A2A.",
+    "expected_output": "A travel-planning agent can communicate with airline, hotel, and itinerary agents to book flights, reserve hotels, and create travel plans through agent-to-agent collaboration."
+  },
+  {
+    "input": "What is agent discovery in A2A?",
+    "expected_output": "Agent discovery is the process of finding available agents and their capabilities so that agents can collaborate effectively."
+  },
+  {
+    "input": "What is an Agent Card in A2A?",
+    "expected_output": "An Agent Card describes an agent's capabilities, metadata, and configuration information so other agents can discover and interact with it."
+  },
+  {
+    "input": "What are the key capabilities shown in the A2A workflow?",
+    "expected_output": "The key capabilities include secure collaboration, task and state management, user experience negotiation, and capability discovery."
+  },
+  {
+    "input": "What is the difference between MCP and A2A?",
+    "expected_output": "MCP focuses on connecting LLMs with tools, APIs, and services, while A2A focuses on communication and collaboration between agents."
+  },
+  {
+    "input": "Can MCP and A2A be used together?",
+    "expected_output": "Yes. An agent can use MCP to access tools and services while using A2A to collaborate with other agents."
+  },
+  {
+    "input": "What are examples of MCP-connected services mentioned in the material?",
+    "expected_output": "Examples include Arxiv, Wikipedia, Tavily Search, DuckDuckGo Search, databases, APIs, and code repositories."
+  },
+  {
+    "input": "Who manages MCP Servers?",
+    "expected_output": "MCP Servers are typically managed by service providers who expose tools and services through the MCP protocol."
+  },
+  {
+    "input": "Which applications can act as MCP Hosts according to the material?",
+    "expected_output": "Examples include Claude Desktop, Cursor IDE, Streamlit applications, FastAPI applications, MCP Inspector, and terminal-based environments."
+  }
+]

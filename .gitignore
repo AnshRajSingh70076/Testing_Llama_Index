@@ -1,0 +1,18 @@
+# virtual environment
+.venv/
+
+# env file (IMPORTANT)
+.env
+
+# python cache
+__pycache__/
+*.pyc
+
+# vector db
+faiss_index/
+
+# logs
+*.log
+
+# system files
+.DS_Store
