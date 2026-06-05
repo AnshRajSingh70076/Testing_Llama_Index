@@ -4,12 +4,15 @@
 
 This project implements a Retrieval-Augmented Generation (RAG) system that processes PDF documents using LlamaCloud, stores embeddings using FAISS, and generates answers using Groq LLM. The system also includes evaluation using LangSmith to measure retrieval and answer quality. The goal of this project is to build a complete document question-answering pipeline that can scale to real-world enterprise documents.
 
+A **vectorless RAG variant** is also included, which directly uses PageIndex/Groq without FAISS. This version achieved an average evaluation score of **0.6**.
+
 ## Features
 
 PDF parsing using LlamaCloud (layout-aware extraction)  
 Chunking using LangChain text splitters  
 Embedding generation using SentenceTransformers  
 Vector storage using FAISS  
+Vectorless RAG (PageIndex + Groq direct retrieval)  
 Question answering using Groq LLM (Llama 3)  
 RAG pipeline with context-based responses  
 Evaluation using LangSmith datasets and evaluators  
@@ -20,6 +23,7 @@ Custom dataset support for benchmarking
 Testing_Llama_Index/  
 ├── main.py                # RAG pipeline implementation  
 ├── llama.py               # LlamaCloud PDF parsing  
+├── vectorlessRag.py       # Vectorless RAG implementation  
 ├── dataset.json           # Evaluation dataset  
 ├── README.md              # Project documentation  
 ├── requirements.txt       # Python dependencies  
@@ -67,6 +71,16 @@ For each query:
 Relevant chunks are retrieved from FAISS  
 Context is passed to Groq LLM  
 Final answer is generated using only retrieved context  
+
+## Vectorless RAG (New)
+
+Instead of FAISS, this version:
+- Uses PageIndex for retrieval
+- Directly passes context to Groq LLM
+- No embedding or vector database required
+- Simpler but slightly lower accuracy
+
+Evaluation Result: **~0.6 average score**
 
 ## RAG Function
 
